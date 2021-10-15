@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Questão 1</h1>
+     <!-- a)2 campos de texto (input). Esses campos só podem aceitar números, elas devem ter rótulos (label). -->
+     <form action="">
+        <label for="numeroUm">Numero 1</label><br>
+        <input id="numeroUm" type="number" placeholder="Digite um numero aqui"> <br>
+        <label for="numeroDois">Numero 2</label><br>
+        <input id="numeroDois" type="number" placeholder="Digite outro">
+        
+       <br><input id="btn" type="button" value="Calcular"> <br>
+
+       <div id="resultado"></div>
+    </form>
+    
+    <h1>Questão 2</h1>
+    <form action="">
+        <label for="name"></label>
+        <input type="text" onchange="upperName(this.value)" placeholder="Digite seu nome">
+<br>
+        <label for="idade"></label>
+        <input type="number" onchange="sumAge(this.value)" placeholder="Digite sua idade">
+    </form>
+
+    <script src="index2.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
